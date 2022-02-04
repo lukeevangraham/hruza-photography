@@ -5,12 +5,11 @@ import styles from "./PhotoGrid.module.scss";
 const PhotoGrid = ({ photos }) => (
     <div className={styles.photoGrid}>
         {photos.map(photo => (
-            <div>
-                <Image src={photo.File.url} layout="fill" objectFit="contain" />
+            <div key={photo.id} className={styles.photo}>
+                {console.log("Photo: ", photo)}
+                <Image src={photo.File.url} layout="fill" objectFit="contain" alt={photo.Title}/>
             </div>
         ))}
-        Photogrid!
-        {console.log("Photos", photos)}
     </div>
 )
 

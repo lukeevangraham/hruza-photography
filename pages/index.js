@@ -27,9 +27,10 @@ export default function Home({ categories }) {
       <main>
         <div className={styles.categories}>
           {categories.map(category => (
-            <Link href={`/categories/${category.slug}`}>
+            <Link href={`/categories/${category.slug}`} key={category.id} passHref>
               <div className={styles.categoryCard}>
-                <Image src={category.featuredPhoto ? category.featuredPhoto.File.url : category.photos[0].File.url} layout="fill" objectFit='cover' />
+                {console.log("HERE: ", category.featuredPhoto)}
+                <Image src={category.featuredPhoto ? category.featuredPhoto.File.url : category.photos[0].File.url} layout="fill" objectFit='cover' alt={category.name} />
                 <div className={styles.categoryCard__name}>{category.name}</div>
               </div>
             </Link>
