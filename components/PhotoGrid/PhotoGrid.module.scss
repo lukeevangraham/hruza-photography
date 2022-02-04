@@ -1,0 +1,6 @@
+.photoGrid {
+    position: relative;
+    display: grid;
+    grid-auto-rows: 45rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}

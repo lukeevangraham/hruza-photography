@@ -1,0 +1,22 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1 rem is */
+  font-size: 62.5%; /* 1 rem = 10px; 10px/16px = 62.5% */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(156, 156, 156), rgb(235, 235, 235));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

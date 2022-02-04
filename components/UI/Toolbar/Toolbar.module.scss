@@ -1,0 +1,12 @@
+.toolbar {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    .inner {
+        max-width: 120rem;
+        margin: auto;
+        .brand {
+            padding: 1.5rem 2rem;
+            font-size: 2rem;
+        }
+    }
+}
